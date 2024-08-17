@@ -1,0 +1,42 @@
+.resume {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .resume-header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+  }
+  
+  .resume-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .resume-section h2 {
+    color: #333;
+    border-bottom: 1px solid #666;
+  }
+  
+  .resume-skills ul, .resume-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resume-skills li, .resume-section li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 5px 10px;
+  }
+  
+  .resume-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #333;
+  }
+  
