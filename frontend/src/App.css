@@ -1,0 +1,702 @@
+/* App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color:color;
+}
+
+
+.resume-upload-section {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.result{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.upload-button, .submit-button {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.upload-button:hover, .submit-button:hover {
+  background-color: white;
+}
+
+.preview-container {
+  margin-top: 20px;
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;  /* This will push the footer to the bottom */
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.App-footer {
+  background-color: #161B22;
+  color: #c9d1d9;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: white ; /* Adjust the background color to match your theme */
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px; /* Adjust based on your logo's aspect ratio */
+}
+.Upload img {
+  height: 60px; /* Adjust based on your logo's aspect ratio */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* This controls spacing between nav items */
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover, .navbar a:focus {
+  color: orange; /* Highlight color on hover */
+}
+
+.search input {
+  padding: 8px;
+  margin-right: 20px; /* Space before the language selector */
+}
+
+.language-selector {
+  background-color: orange; /* Your brand's highlight color */
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners for the language selector */
+}
+
+
+.animated-section {
+  position: relative; /* Ensures that positioning is relative to this container */
+  z-index: 1; /* Higher index if needed */
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  margin-top: 20px; /* Ensure there's space between sections */
+}
+
+.upload-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #000000; /* This adds a black border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-input {
+  margin-top: 10px;
+}
+
+.upload-button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #2a9df4 ;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.upload-button:hover {
+  background-color: #2a9df4;
+}
+
+
+/* User Information Section */
+.user-info-container {
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+  padding: 20px; /* Padding inside the container */
+  margin-bottom: 20px; /* Space below the section */
+}
+
+.user-info {
+  font-family: Arial, sans-serif; /* Ensuring font family matches Skills */
+  color: #333; /* Dark grey text color, similar to Skills */
+  font-size: 14px; /* Matching font size to Skills */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+.user-info p {
+  margin-bottom: 10px; /* Space between paragraphs */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  color: #333;
+  font-size: 14px; /* Change this to match the size of skills */
+  padding: 10px 15px; /* Padding to align with skills items */
+}
+
+.user-info p:hover {
+  background-color: #e0e0e0; /* Light grey background on hover */
+  color: #0056b3; /* Blue text color on hover, matching Skills hover effect */
+}
+
+.user-info strong {
+  color: #0056b3; /* Blue color for labels, matching Skills */
+  font-weight: bold; /* Bold font for emphasis */
+  font-size: 14px; /* Matching font size with skills */
+}
+
+
+/* SKILLS */
+.skills-header {
+  color: #0056b3;  /* Header color */
+  text-align: center; /* Center-align the header */
+  font-size: 24px; /* Font size for the header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.skills-list {
+  display: flex; /* Enables flexbox */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Center-aligns items horizontally */
+  gap: 10px; /* Space between each skill button */
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0; /* Removes default padding */
+  margin: 20px 0; /* Vertical margin */
+  font-size: 12px;
+}
+
+.skill-item {
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+  padding: 10px 15px; /* Padding inside each skill item */
+  color: #333; /* Text color */
+  cursor: pointer; /* Cursor indicates clickable */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  font-size: 12px;
+}
+
+.skill-item:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover for interaction feedback */
+  font-size: 12px;
+}
+
+
+
+
+
+
+/*Compare feedback */
+.score-container {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif; 
+
+  border: 2px solid #000; /* Black border */
+
+
+}
+
+
+/* Score Section */
+.score-container {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #000; /* Black border */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.score-container:hover {
+  background-color: #f9f9f9; /* Light hover effect */
+  transform: scale(1.02); /* Slight scaling on hover */
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: red; /* Red for low score */
+  transition: color 0.3s ease;
+}
+
+.score-container:hover .score {
+  color: darkred; /* Darker red on hover */
+}
+
+.score-bar-container {
+  background-color: #e0e0e0; /* Light gray background */
+  border: 2px solid #000; /* Black border */
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+.score-bar {
+  height: 100%;
+  background: linear-gradient(to right, #ff6347, #ff4500); /* Gradient from light red to dark red */
+  transition: width 0.3s ease-in-out, background 0.3s ease;
+  width: 9.14%; /* Set the width dynamically based on the score */
+}
+
+.score-bar:hover {
+  background: linear-gradient(to right, #ff4500, #b22222); /* Darker gradient on hover */
+}
+
+.score-feedback {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #333;
+  font-weight: normal;
+}
+
+/* Tooltip */
+.score-container .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the element */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.score-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/* Feedback Section */
+.feedback-section {
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+  padding: 20px; /* Padding inside each item */
+  margin: 20px 0; /* Vertical margin */
+  font-family: Arial, sans-serif; /* Ensures font family consistency across sections */
+  color: #333; /* Text color */
+  font-size: 14px; /* Font size for better readability */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.feedback-section:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Deeper shadow on hover for emphasis */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.feedback-section h2 {
+  color: #0056b3; /* Blue color for the header */
+  text-align: center; /* Center-align the header */
+  margin-bottom: 10px; /* Space below the header */
+  font-size: 24px; /* Header font size */
+}
+
+.feedback-content {
+  font-size: 14px; /* Font size for content */
+  line-height: 1.5; /* Line height for better readability */
+  color: #333; /* Text color */
+}
+
+
+
+
+
+
+
+/* Recommended Skills Section */
+.recommended-skills-section {
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+  padding: 20px; /* Padding inside the container */
+  margin: 20px 0; /* Vertical margin */
+  font-family: Arial, sans-serif; /* Ensuring font family matches Experience */
+  color: #333; /* Dark grey text color */
+  font-size: 14px; /* Matching font size to Experience */
+}
+
+.recommended-skills-header {
+  color: #0056b3; /* Blue color for the header */
+  text-align: center; /* Center-align the header */
+  margin-bottom: 10px; /* Space below the header */
+  font-size: 24px; /* Header font size matching Experience section */
+}
+
+.skills-list {
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0; /* Removes default padding */
+}
+
+.skill-item {
+  font-size: 14px; /* Text font size matches Experience */
+  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 10px; /* Space between list items */
+  padding: 10px 15px; /* Padding inside each item */
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.skill-item:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  color: #0056b3; /* Blue text color on hover */
+}
+
+
+
+
+
+
+.extra-resume-section {
+  background-color: #f0f0f0;  /* Light grey background matching other sections */
+  color: #333; /* Dark text color for readability */
+  font-family: Arial, sans-serif; /* Consistent font family */
+  padding: 20px; /* Padding for comfortable spacing inside the container */
+  margin: 20px 0; /* Vertical margin for spacing between sections */
+  border-radius: 8px; /* Rounded corners for a smooth appearance */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 14px; /* Readable font size */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+}
+
+
+
+
+.extra-resume-section p {
+  line-height: 1.6; /* Slightly increased line height for better readability */
+  margin: 10px 0; /* Margin between paragraphs for proper spacing */
+  padding: 10px; /* Padding inside each paragraph for better aesthetics */
+  background-color: #fff; /* White background for contrast */
+  border-radius: 5px; /* Smooth rounded corners for the paragraphs */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow around each paragraph */
+  transition: background-color 0.3s, color 0.3s ease; /* Smooth transitions on hover */
+}
+
+/* Hover effect on paragraphs */
+.extra-resume-section p:hover {
+  background-color: #e0e0e0; /* Slightly darker background color on hover */
+  color: #0056b3; /* Blue color on hover for contrast */
+}
+
+/* Hover effect for the entire section */
+.extra-resume-section:hover {
+  background-color: #e8e8e8; /* Slightly darker grey background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a lifted effect on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+
+
+
+
+@keyframes progressAnim {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+
+.App-footer {
+  background-color: #161B22;
+  color: #c9d1d9;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+
+
+
+
+.contact-btn {
+  background-color: #f90; /* Orange color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #e68a00; /* Slightly darker orange on hover */
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px; /* Adjust size as needed */
+}
+
+.search-icon, .login-icon {
+  color: #333; /* Icon color */
+}
+
+.language-selector {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1; /* Light grey background */
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown styling */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.language-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.language-dropdown-content a:hover {background-color: #f1f1f1}
+
+.language-dropdown:hover .language-dropdown-content {
+  display: block;
+}
+
+.language-dropdown:hover .language-selector {
+  background-color: #ddd;
+}
+
+@keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+.contact-button {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: darkorange;
+}
+
+
+.integration-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container, .preview-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.preview-container {
+  border-left: 1px solid #ccc;
+}
+
+.resume-preview {
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* src/App.css */
+
+.tutorial-page {
+  padding: 20px;
+  text-align: center;
+  background-color:#000;
+  color:white;
+}
+
+.tutorial-page h1 {
+  color: #ffa500;
+}
+
+.tutorial-section {
+  margin-top: 40px;
+  
+}
+
+.tutorial-section h2 {
+  margin-bottom: 20px;
+}
+
+.tutorial-section iframe {
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion-title {
+  background-color: #0047AB; /* Adjust the color to match the example */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px; /* Rounded corners as seen in the image */
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for better readability */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Full width */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: Adds shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.accordion-title:hover {
+  background-color: #00337F; /* Darker blue on hover */
+}
+
+
+
+.accordion-content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+
+/* You can add transitions or animations to enhance the feel */
+
+
+
+.skill-item {
+  background-color: #f0f0f0; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside each tag */
+  margin: 5px; /* Space around each tag */
+  display: inline-block; /* Layout tags in a wrap */
+  font-size: 14px; /* Text size */
+}
+
+.skills-list {
+  list-style-type: none; /* Removes bullets */
+  padding: 0; /* Removes padding */
+  text-align: center; /* Center-aligns the tags */
+}
+

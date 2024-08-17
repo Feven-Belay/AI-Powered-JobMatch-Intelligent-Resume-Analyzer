@@ -1,0 +1,71 @@
+/* Score Section */
+.score-container {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #000; /* Black border */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .score-container:hover {
+    background-color: #f9f9f9; /* Light hover effect */
+    transform: scale(1.02); /* Slight scaling on hover */
+  }
+  
+  .score {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .score-bar-container {
+    background-color: #e0e0e0; /* Light gray background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .score-bar {
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .score-feedback {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  /* Tooltip */
+  .tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .score-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
