@@ -60,3 +60,10 @@
 - **Node.js**: Version 14.x or higher.
 - **Python 3.x**: Required for running the resume parsing script.
 - **MySQL**: Required for database setup.
+
+### **Demo
+https://youtu.be/b2uQUpaxq7o
+
+### **Google Slide
+https://docs.google.com/presentation/d/1NUzTAsYrFyDQSVgHQOVc7FpQrcuZiDSC6-KKvqtFHiI/edit#slide=id.g2f385c89241_3_0
+
